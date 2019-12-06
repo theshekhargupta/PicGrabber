@@ -15,6 +15,11 @@
 		5A533510239A56EB00899FFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A53350E239A56EB00899FFA /* LaunchScreen.storyboard */; };
 		5A53351B239A56EC00899FFA /* PicGrabberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53351A239A56EC00899FFA /* PicGrabberTests.swift */; };
 		5A533526239A56EC00899FFA /* PicGrabberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A533525239A56EC00899FFA /* PicGrabberUITests.swift */; };
+		5A6ECEAA239A64E8003C3CD2 /* PGSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6ECEA9239A64E8003C3CD2 /* PGSearchViewController.swift */; };
+		5A6ECEAC239A6535003C3CD2 /* PGSearchViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6ECEAB239A6535003C3CD2 /* PGSearchViewControllerModel.swift */; };
+		5A6ECEAE239A6542003C3CD2 /* PGSearchViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6ECEAD239A6542003C3CD2 /* PGSearchViewControllerProtocol.swift */; };
+		5A6ECEB0239A6550003C3CD2 /* PGSearchViewControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6ECEAF239A6550003C3CD2 /* PGSearchViewControllerService.swift */; };
+		5A6ECEB2239A655E003C3CD2 /* PGSearchViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6ECEB1239A655E003C3CD2 /* PGSearchViewControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		5A533521239A56EC00899FFA /* PicGrabberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicGrabberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A533525239A56EC00899FFA /* PicGrabberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicGrabberUITests.swift; sourceTree = "<group>"; };
 		5A533527239A56EC00899FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A6ECEA9239A64E8003C3CD2 /* PGSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSearchViewController.swift; sourceTree = "<group>"; };
+		5A6ECEAB239A6535003C3CD2 /* PGSearchViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSearchViewControllerModel.swift; sourceTree = "<group>"; };
+		5A6ECEAD239A6542003C3CD2 /* PGSearchViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSearchViewControllerProtocol.swift; sourceTree = "<group>"; };
+		5A6ECEAF239A6550003C3CD2 /* PGSearchViewControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSearchViewControllerService.swift; sourceTree = "<group>"; };
+		5A6ECEB1239A655E003C3CD2 /* PGSearchViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSearchViewControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,9 @@
 		5A533502239A56DA00899FFA /* PicGrabber */ = {
 			isa = PBXGroup;
 			children = (
+				5A533533239A60AB00899FFA /* PGCommon */,
+				5A533534239A60AB00899FFA /* PGLibrary */,
+				5A533535239A60AB00899FFA /* PGModule */,
 				5A533503239A56DA00899FFA /* AppDelegate.swift */,
 				5A533505239A56DA00899FFA /* SceneDelegate.swift */,
 				5A533507239A56DA00899FFA /* ViewController.swift */,
@@ -126,6 +139,80 @@
 				5A533527239A56EC00899FFA /* Info.plist */,
 			);
 			path = PicGrabberUITests;
+			sourceTree = "<group>";
+		};
+		5A533533239A60AB00899FFA /* PGCommon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PGCommon;
+			sourceTree = "<group>";
+		};
+		5A533534239A60AB00899FFA /* PGLibrary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PGLibrary;
+			sourceTree = "<group>";
+		};
+		5A533535239A60AB00899FFA /* PGModule */ = {
+			isa = PBXGroup;
+			children = (
+				5A533536239A60AB00899FFA /* PGSearchViewController */,
+			);
+			path = PGModule;
+			sourceTree = "<group>";
+		};
+		5A533536239A60AB00899FFA /* PGSearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A533537239A60AB00899FFA /* Protocol */,
+				5A533538239A60AB00899FFA /* Model */,
+				5A533539239A60AB00899FFA /* View */,
+				5A53353A239A60AB00899FFA /* Service */,
+				5A53353B239A60AB00899FFA /* ViewModel */,
+			);
+			path = PGSearchViewController;
+			sourceTree = "<group>";
+		};
+		5A533537239A60AB00899FFA /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5A6ECEAD239A6542003C3CD2 /* PGSearchViewControllerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		5A533538239A60AB00899FFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A6ECEAB239A6535003C3CD2 /* PGSearchViewControllerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A533539239A60AB00899FFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A6ECEA9239A64E8003C3CD2 /* PGSearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A53353A239A60AB00899FFA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5A6ECEAF239A6550003C3CD2 /* PGSearchViewControllerService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5A53353B239A60AB00899FFA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5A6ECEB1239A655E003C3CD2 /* PGSearchViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +346,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A6ECEB2239A655E003C3CD2 /* PGSearchViewControllerViewModel.swift in Sources */,
+				5A6ECEAC239A6535003C3CD2 /* PGSearchViewControllerModel.swift in Sources */,
 				5A533508239A56DA00899FFA /* ViewController.swift in Sources */,
 				5A533504239A56DA00899FFA /* AppDelegate.swift in Sources */,
+				5A6ECEAE239A6542003C3CD2 /* PGSearchViewControllerProtocol.swift in Sources */,
 				5A533506239A56DA00899FFA /* SceneDelegate.swift in Sources */,
+				5A6ECEAA239A64E8003C3CD2 /* PGSearchViewController.swift in Sources */,
+				5A6ECEB0239A6550003C3CD2 /* PGSearchViewControllerService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
