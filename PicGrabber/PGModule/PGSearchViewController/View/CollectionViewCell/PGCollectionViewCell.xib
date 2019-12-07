@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PGCollectionViewCell" id="CCv-53-vk3" customClass="PGCollectionViewCell" customModule="PicGrabber" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8eb-mk-IvU" customClass="PGCollectionViewCell" customModule="PicGrabber" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lsK-Es-B9l">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                <constraints>
+                    <constraint firstItem="lsK-Es-B9l" firstAttribute="leading" secondItem="8eb-mk-IvU" secondAttribute="leading" id="2fy-Lr-0IT"/>
+                    <constraint firstItem="lsK-Es-B9l" firstAttribute="centerY" secondItem="8eb-mk-IvU" secondAttribute="centerY" id="CLs-Eh-fnd"/>
+                    <constraint firstItem="lsK-Es-B9l" firstAttribute="top" secondItem="8eb-mk-IvU" secondAttribute="top" id="CQX-wa-l0l"/>
+                    <constraint firstItem="lsK-Es-B9l" firstAttribute="centerX" secondItem="8eb-mk-IvU" secondAttribute="centerX" id="ipH-Fj-peD"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="imageView" destination="lsK-Es-B9l" id="bCO-LB-o3m"/>
+            </connections>
+            <point key="canvasLocation" x="-238" y="-48"/>
+        </collectionViewCell>
+    </objects>
+</document>

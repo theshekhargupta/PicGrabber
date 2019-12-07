@@ -6,4 +6,11 @@
 //  Copyright © 2019 Shekhar. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+import UIKit
+
+struct PGSearchViewControllerModel: Codable {
+    let stat: String?
+    let photos: PGPhotos?
+}
